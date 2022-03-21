@@ -1,0 +1,111 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>grid</title>
+        <style>
+            .box{
+                width: 300px;
+                height: 400px;
+                display: grid;
+                /* #4*3 */
+                grid-template-rows: repeat(4,1fr);
+                grid-template-columns:repeat(3,1fr);
+                /* 设置边距 */
+                gap: 10px 10px;
+                background-color: aqua ;  
+                /* place-items: 内容快; */
+                justify-items: center;
+                align-items:center;
+            }
+             /* 第一个孩子 */
+             .box div:nth-child(1){
+                justify-self:stretch;
+                 align-self:stretch;
+                 background-color: aliceblue;
+                  /* 设置内容的位置 */
+                  display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+             /* 第二个孩子 */
+             .box div:nth-child(2){
+                 background-color: aliceblue;
+                 grid-area: 2/1/3/2;
+                 justify-self:stretch;
+                 align-self:stretch;
+                 /* 设置内容的位置 */
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+             /* 第三个孩子 */
+             .box div:nth-child(3){
+                  /* 设置内容的位置 */
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 grid-area: 1/2/3/4;
+                 justify-self:stretch;
+                 align-self:stretch;
+                 background-color: aliceblue;
+             }
+             /* 第4个孩子 */
+             .box div:nth-child(4){
+                background-color: aliceblue;
+                 grid-area: 3/1/4/3;
+                 justify-self:stretch;
+                 align-self:stretch;
+                 /* 设置内容的位置 */
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+             /* 第5个孩子 */
+             .box div:nth-child(5){
+                background-color: aliceblue;
+                 grid-area: 3/3/4/4;
+                 justify-self:stretch;
+                 align-self:stretch;
+                 /* 设置内容的位置 */
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+             /* 第6个孩子 */
+             .box div:nth-child(6){
+                background-color: aliceblue;
+                 grid-area: 4/1/5/2;
+                 justify-self:stretch;
+                 align-self:stretch;
+                 /* 设置内容的位置 */
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+             /* 第7个孩子 */
+             .box div:nth-child(7){
+                background-color: aliceblue;
+                 grid-area: 4/2/5/4;
+                 justify-self:stretch;
+                 align-self:stretch;
+                 /* 设置内容的位置 */
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+        </style>
+    </head>
+    <body>
+        <!-- 设置容器 -->
+        <div class="box">
+            <div class="fir">阿里第一颗芯</div>
+            <div class="sec">退役军人专属</div>
+            <div class="thr">小米5g</div>
+            <div class="fou">华为mate30</div>
+            <div class="fiv">阳澄湖大闸蟹</div>
+            <div class="six">小米手环</div>
+            <div class="sev">中国世界经济坐标</div>
+        </div>
+    </body>
+</html>
